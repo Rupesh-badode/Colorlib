@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Node_Modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+            background-image:url(/images/bg_1.jpg.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial;
+            overflow-x: hidden;
+        }
+        .header-title{
+            color: white;
+            padding: 25px;
+            margin: 10px;
+            font-size: 20px;
+            display: grid;
+            grid-template-columns:4fr 2fr 2fr 1.6fr;
+        }
+        .title{
+            font-size:25px;
+            font-weight: bold;
+        }
+        p{
+            font-size: 15px;
+            margin-top: 1px;
+        }
+        #header-icon{
+            font-size:25px;
+            border: none;
+            color: rgb(90, 173, 173);
+        }
+        nav{
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            color: white;
+            padding: 20px;
+            margin:15px;
+            background-color:rgba(5, 117, 117, 0.1);
+        }
+        .nav-title{
+            background-color:rgb(54, 158, 132);
+            color: white;
+            font-size:large;
+            margin-right:-20px;
+            width: 300px;
+            margin-top: -20px;
+            margin-bottom: -20px;
+            border: none;
+            border-bottom-left-radius:200px;
+        }
+        .panel{
+            color: white;
+            padding: 20px;
+            margin-top:80px;
+        }
+        .panel-button{
+            font-size:14px;
+            width:200px;
+            height:40px;
+            background-color:rgb(54, 158, 132);
+            border: none;
+            color: white;
+        }
+        .panel-right-button{
+            font-size:14px;
+            width:200px;
+            height:40px;
+            background-color: white;
+            border: none;
+        }
+        section{
+            background-color:rgb(236, 235, 235);
+            background-size: cover;
+            columns: 2;
+            padding: 10px;
+            margin:-10px;
+        }
+        .right-section{
+            text-align: center;
+            padding-top:20px ;
+        }
+        .card{
+            background-color: white;
+            display:grid;
+            grid-template-columns: 2fr 4fr;
+            margin-bottom:6px ;
+        }
+        .card span{
+            font-size:50px;
+            line-height: 3;
+            margin-left:20px;
+        }
+        footer{
+            background-color:rgb(236, 235, 235);
+            display: grid;
+            grid-template-columns: 3fr 2fr 2fr 2fr 2fr 1fr;
+            margin: -5px;
+            padding: 10px;
+            color: rgb(71, 70, 70);
+        }
+        footer span{
+            color:rgb(54, 158, 132);
+            font-size:13px;
+        }
+        .last-Container{
+            padding:20px;
+            margin-bottom:-20px;
+            color: rgb(117, 117, 116);
+            background-color:rgb(211, 208, 208);
+            text-align: center;
+            justify-content: center;
+        }
+        @media screen and (orientation:portrait) {
+        footer{
+            display: grid;
+            grid-template-columns: 4fr;
+            color: white;
+            background-color: black;
+            }
+        .header-title{
+            display: grid;
+            grid-template-columns: 4fr;
+            color: black;
+        }
+        nav div{
+           display:none;
+        }
+        .panel{
+            color: black;
+        }
+        section{
+           display:grid;
+           color: white;
+           background-color: black;
+        }
+        .card{
+            background-color: black;
+            border: 1px solid gray;
+        }
+        body{
+            background-image:url(/images/bg_1.jpg.webp);
+            background-size:100%;
+            background-repeat: no-repeat;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <div class="title">ACADMIA<p>ONLINE EDUCATION & LEARNING</p></div>
+            <div><span style="font-size:30px;" class="bi bi-clock "></span>Monday-Friday<p>8:00AM-8:00PM</p></div>
+            <div><span class="bi bi-telephone"></span>CALL US<p>+91 8963932223</p></div>
+            <div id="header-icon"><span style="border-radius:30px;padding: 5px; background-color:rgba(5, 117, 117, 0.1);" class="bi bi-facebook"></span><span style="border-radius:30px;padding: 5px;background-color:rgba(5, 117, 117, 0.1)" class="bi bi-twitter"></span><span style="border-radius:30px;padding: 5px;background-color:rgba(5, 117, 117, 0.1)" class="bi bi-instagram"></span><span style="border-radius:30px;padding:5px;background-color: rgba(5, 117, 117, 0.1)" class="bi bi-dribbble"></span></div>
+        </div>
+        <nav>
+            <div>Home</div>
+            <div>All Courses</div>
+            <div>About</div>
+            <div>Team</div>
+            <div>Pricing</div>
+            <div>Journal</div>
+            <div>Contact</div>
+            <button class="nav-title">Get Certificate</button>
+        </nav>
+        <div class="panel">
+            <div><p>WELLCOME TO ACADMIA</p></div>
+            <div><h1>Best Online Education<br>Expertise</h1></div>
+            <div><p>Far far away, behind the word mountains, far from the countries<br> Vokalia and Consonantia,there live the blind texts.</p></div>
+            <button class="panel-button">GET START NOW!<span class="bi bi-arrow-right-short"></span></button>
+            <button class="panel-right-button">VIEW COURSE<span class="bi bi-arrow-right-short"></span></button>
+        </div>
+    </header>
+    <section>
+            <img src="/images/about.jpg.webp" width="100%">
+            <div class="right-section">
+                <div><p style="color:rgb(54, 158, 132);">LEARN ANYTHING</p></div>
+                <div><h1>Benefits About Online<br>Learning Expertise</h1></div>
+            </div>
+            <div>
+                <div class="card"> 
+                    <div><span class="bi bi-book"></span></div>
+                    <div>
+                        <h1>Online Courses</h1>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+                <div class="card"> 
+                    <div><span class="bi bi-patch-check-fill"></span></div>
+                    <div>
+                        <h1>Earn A Certificate </h1>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+                <div class="card"> 
+                    <div><span class="bi bi-person-bounding-box"></span></div>
+                    <div>
+                        <h1>Learn With Expert</h1>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer>
+            <div ><div class="title" style="color: black;">ACADEMIA</div>
+                <span>ONLINE EDUCATION & LEARNING</span>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <div>About Us</div>
+                <div>Services</div>
+                <div>Courses</div>
+            </div>
+            <div>
+                <h4>Quick Links</h4>   
+                <div>Contact Us</div> 
+                <div>Pricing</div>
+                <div>Terms And Condition</div>
+                <div>Privacy</div>
+                <div>Feedbacks</div>
+            </div>
+            <div>
+                <h4>Recent Posts</h4>   
+                <div>Creativity and Inspiration</div>
+            </div>
+            <div>
+                <h4>Have a Quetion?</h4>
+                <div>	203 Fake St. Mountain View, San Francisco, California, USA</div>
+            </div>
+    </footer>
+    <div class="last-Container">Copyright ©2023 All rights reserved | This template is made with<span class="bi bi-heart"></span>  by <span style="color: rgb(4, 124, 40);">Rupesh</span></div>
+</body>
+</html>
